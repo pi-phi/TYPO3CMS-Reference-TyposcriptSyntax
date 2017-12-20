@@ -11,7 +11,7 @@ TypoScript Syntax and In-depth Study
       doc_core_ts
 
 :Version:
-      7 LTS
+      7 LTS (7.6)
 
 :Language:
       en
