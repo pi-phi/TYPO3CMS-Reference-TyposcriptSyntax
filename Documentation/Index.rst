@@ -12,7 +12,7 @@ TypoScript Syntax and In-depth Study
       doc_core_ts
 
 :Version:
-      6.0.0
+      6.0
 
 :Language:
       en
