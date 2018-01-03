@@ -3,85 +3,125 @@
 
 .. _start:
 
-====================================
-TypoScript Syntax and In-depth Study
-====================================
+.. _introduction:
+.. _about:
+.. _credits:
+.. _feedback:
 
-:Previous Key:
-      doc_core_ts
+.. _syntax:
+.. _syntax-introduction:
+.. _syntax-example:
+.. _typoscript-contexts:
+.. _typoscript-syntax:
+.. _syntax-object-path:
+.. _syntax-operator:
+.. _syntax-value:
+.. _syntax-comments:
+.. _syntax-comment-blocks:
+.. _syntax-equal-operator:
+.. _syntax-value-assignment:
+.. _syntax-colon-equal-operator:
+.. _syntax-value-modification:
+.. _syntax-code-blocks:
+.. _syntax-curly-brackets:
+.. _syntax-round-brackets:
+.. _syntax-multiline-values:
+.. _syntax-smaller-than-operator:
+.. _syntax-object-copying:
+.. _syntax-equal-smaller-than-operator:
+.. _syntax-object-referencing:
+.. _syntax-bigger-than-operator:
+.. _syntax-unsetting-operator:
+.. _syntax-square-brackets:
+.. _syntax-conditions:
+.. _conditions:
+.. _conditions-usage:
+.. _conditions-syntax:
+.. _conditions-combine:
+.. _else-condition:
+.. _end-condition:
+.. _global-condition:
+.. _conditions-confinements:
+.. _conditions-braces:
+.. _the-global-condition:
+.. _conditions-summary:
+.. _includes:
+.. _includes-conditions:
+.. _includes-best-practices:
 
-:Version:
-      latest (9-dev)
+.. _typoscript-templates:
+.. _typoscript-templates-usage:
+.. _typoscript-templates-structure:
+.. _typoscript-templates-structure-includes:
+.. _typoscript-templates-structure-analyzer:
+.. _constants:
+.. _what-are-constants:
+.. _using-constants:
+.. _constant-editor:
+.. _constant-editor-default-values:
+.. _constant-editor-comments:
+.. _constant-editor-keys:
+.. _constant-editor-keys-cat:
+.. _constant-editor-keys-cat-predefined-categories:
+.. _constant-editor-keys-cat-custom-categories:
+.. _constant-editor-keys-cat-subcategories:
+.. _constant-editor-keys-cat-predefined-subcategories:
+.. _constant-editor-keys-cat-custom-subcategories:
+.. _constant-editor-keys-cat-constants-ordering:
+.. _constant-editor-keys-type:
+.. _constant-editor-keys-label:
+.. _templates-debugging:
+.. _debugging:
 
-:Language:
-      en
+.. _tsconfig:
+.. _tsconfig-page:
+.. _tsconfig-user:
 
-:Description:
-      Description of the syntax and nature of TypoScript.
+.. _details:
+.. _parsing-storing-executing-typoscript:
+.. _parsing-typoscript:
+.. _storing-typoscript:
+.. _executing-typoscript:
+.. _myths:
+.. _faq:
+.. _acknowledgements:
+.. _myth-scripting-language:
+.. _myth-javascript:
+.. _myth-proprietary:
+.. _myth-complex:
+.. _xml:
 
-:Keywords:
-      typoscript, syntax, forAdmins, forIntermediates
+.. _typoscript-parser-api:
+.. _parser-introduction:
+.. _custom-typoscript:
+.. _implementing-custom-conditions:
 
-:Copyright:
-      2000-2016
+.. _what-is-typoscript:
+.. _php-arrays:
+.. _object-paths:
+.. _objects:
+.. _properties:
+.. _semantics:
 
-:Author:
-      Documentation Team
+.. _next-steps:
 
-:Email:
-      documentation@typo3.org
-
-:License:
-      Open Publication License available from `www.opencontent.org/openpub/
-      <http://www.opencontent.org/openpub/>`_
-
-:Rendered:
-      |today|
-
-The content of this document is related to TYPO3,
-
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
-
-
-**Official documentation**
-
-This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
+.. _Targets-for-Cross-Referencing:
 
 
-**Core Manual**
+==================
+TYPO3 CMS Services
+==================
 
-This document is a Core Manual. Core Manuals address the built in
-functionality of TYPO3 and are designed to provide the reader with in-
-depth information. Each Core Manual addresses a particular process or
-function and how it is implemented within the TYPO3 source code. These
-may include information on available APIs, specific configuration
-options, etc.
+.. attention::
 
-Core Manuals are written as reference manuals. The reader should rely
-on the Table of Contents to identify what particular section will best
-address the task at hand.
+   This document has been merged into :ref:`TYPO3 Core API <typoscript-syntax-start>`
+   since core version 9.
 
+.. rst-class:: horizbuttons-tip-xxl
 
-**Table of Contents**
+- :ref:`This manual has moved <typoscript-syntax-start>`
 
-.. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
-
-   Introduction/Index
-   Syntax/Index
-   TypoScriptTemplates/Index
-   TSconfig/Index
-   TheDetails/Index
-   TypoScriptParserApi/Index
-   AppendixA/Index
-   NextSteps/Index
-   Targets
-
+*Older versions*
+(`v8.7 </typo3cms/TyposcriptSyntaxReference/8.7/>`__,
+`v7.6 </typo3cms/TyposcriptSyntaxReference/7.6/>`__):
+Please refer to "Related Links" in the lower left corner of the page.
