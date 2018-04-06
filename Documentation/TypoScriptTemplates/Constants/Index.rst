@@ -30,6 +30,11 @@ which are later used in *several places*.
    The top-level "object" :code:`TSConstantEditor` cannot be used. It is
    reserved for the :ref:`configuration of help in the Constant Editor module <constant-editor-categories>`.
 
+.. important::
+
+   **Multi-line values: The ( ) signs**
+
+   Constants do not support multiline values!
 
 Example
 ~~~~~~~
