@@ -1,0 +1,9 @@
+{
+    "name": "typo3/reference-typoscript-syntax",
+    "type": "typo3-cms-documentation",
+    "description": "Complete reference to the TypoScript syntax and template structures",
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^6.2"
+    }
+}
