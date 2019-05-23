@@ -108,9 +108,9 @@
 .. _Targets-for-Cross-Referencing:
 
 
-==================
-TYPO3 CMS Services
-==================
+===========================
+TYPO3 CMS Typoscript Syntax
+===========================
 
 .. attention::
 
