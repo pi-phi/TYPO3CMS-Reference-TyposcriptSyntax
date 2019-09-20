@@ -476,6 +476,77 @@ Remember:
   The value you get will be just :code:`< plugin.tx_example.settings.foo` instead.
 
 
+Example:
+~~~~~~~~
+
+This example shows a pitfall with references and object notation. while the copy opreator 
+has no problems with the relative notation the reference operator fails.
+Notice the late modification of all original objects, which is active in all working references.
+
+Other used elements: comments, assign operator, copy operator, code blocks, multi line values
+
+.. code-block:: typoscript
+   
+   /*
+     constant:
+        pageToShow = 123
+   */     
+
+   page = PAGE
+
+   lib {
+      foo = RECORDS
+      foo {
+         dontCheckPid = 1
+         tables = tt_content
+      }
+      fie =< .foo
+      bar =< lib.foo
+   }
+
+   page.10 = FLUIDTEMPLATE
+   page.10 {
+      // this is the fluid template inline:
+      template = TEXT
+      template.value (
+
+   <f:debug>{_all}</f:debug>
+   <f:debug title="foo"><f:cObject typoscriptObjectPath="lib.foo"  /></f:debug>
+   <f:debug title="fie"><f:cObject typoscriptObjectPath="lib.fie"  /></f:debug>
+   <f:debug title="bar"><f:cObject typoscriptObjectPath="lib.bar"  /></f:debug>
+
+   Here we go!
+   )
+
+      variables {
+         foo < lib.foo
+         fie =< .foo
+         bar =< page.10.variables.foo
+      }
+   }
+
+   page.20 = COA
+   page.20 {
+      wrap = <hr />|<hr />
+  
+      10 < lib.foo
+  
+      15 = TEXT
+      15.value = <hr />
+  
+      20 =< .10
+
+      25 < .15
+  
+      30 =< page.20.10
+   }
+
+   lib.foo.source = {$pageToShow}
+   page.10.variables.foo.source = {$pageToShow}
+   page.20.10.source = {$pageToShow}
+
+
+
 .. _syntax-bigger-than-operator:
 .. _syntax-unsetting-operator:
 
